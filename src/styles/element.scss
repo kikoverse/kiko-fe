@@ -1,0 +1,43 @@
+
+:root {
+  --el-text-color-regular:#fff;
+  --el-input-bg-color:none;
+  --el-text-color-primary:#fff;
+
+}
+.el-button {  
+  --el-button-bg-color:transparent;
+  --el-button-hover-bg-color:transparent;
+  --el-button-active-text-color:#fff;
+  --el-button-disabled-bg-color:transparent;
+}
+.el-input {
+  // hover focus等border的样式
+  --el-input-focus-border: #ededed;
+}
+
+.el-dropdown-menu__item:focus,
+.el-dropdown-menu__item:not(.is-disabled):hover {
+  color: #000;
+}
+.el-upload-dragger{
+  background-color:transparent;
+  width: auto;
+  height: auto;
+}
+.el-notification {
+  background-color: #363636 !important;
+  border: none;
+}
+.el-select__popper.el-popper[role=tooltip] {
+  background: linear-gradient(180deg, #3e3e3e 0%, #3e3e3e 0%, #252525 100%);
+  border:none
+}
+.el-select__popper.el-popper[role=tooltip] .el-popper__arrow::before {
+  border:1px solid #3e3e3e;
+}
+.el-popper.is-light .el-popper__arrow::before {
+  border:1px solid #3e3e3e;
+  background: linear-gradient(180deg, #3e3e3e 0%, #3e3e3e 0%, #252525 100%);
+  right: 0;
+}

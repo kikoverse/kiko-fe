@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="25px" viewBox="0 0 24 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画板" transform="translate(-171.000000, -776.000000)" fill="currentColor" fill-rule="nonzero">
+            <g id="编组-3备份" transform="translate(171.000000, 776.863961)">
+                <path d="M13,2 L13,5 L17,5 L17,7 L13,7 L13.0008069,10.0830939 C15.7662419,10.5474349 17.8900273,12.9035247 17.9958615,15.7750617 L18,16 C18,19.3137085 15.3137085,22 12,22 C8.6862915,22 6,19.3137085 6,16 C6,13.0269368 8.16238395,10.5589255 11.0001915,10.0829263 L11,7 L7,7 L7,5 L11,5 L11,2 L13,2 Z M12,12 C9.790861,12 8,13.790861 8,16 C8,18.209139 9.790861,20 12,20 C14.209139,20 16,18.209139 16,16 C16,13.790861 14.209139,12 12,12 Z" id="形状结合" transform="translate(12.000000, 12.000000) scale(1, -1) translate(-12.000000, -12.000000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

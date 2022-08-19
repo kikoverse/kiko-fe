@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#EDEDED" offset="100%"></stop>
+        </linearGradient>
+        <path d="M14,0 C21.7319865,-3.19669972e-15 28,6.2680135 28,14 C28,21.7319865 21.7319865,28 14,28 C6.2680135,28 -8.29461588e-16,21.7319865 0,14 C-2.72325209e-15,6.2680135 6.2680135,-3.56013962e-16 14,0 Z" id="path-2"></path>
+        <filter x="-25.0%" y="-17.9%" width="150.0%" height="150.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.94213646   0 0 0 0 0.94213646   0 0 0 0 0.94213646  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <filter x="-16.1%" y="-8.9%" width="132.1%" height="132.1%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="设置2" transform="translate(-971.000000, -192.000000)">
+            <g id="编组-2" transform="translate(975.000000, 194.000000)">
+                <g id="矩形">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                    <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                    <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-2"></use>
+                    <path stroke="#DFDFDF" stroke-width="0.5" d="M14,0.25 C17.7969577,0.25 21.2344577,1.78902117 23.7227182,4.27728176 C26.2109788,6.76554234 27.75,10.2030423 27.75,14 C27.75,17.7969577 26.2109788,21.2344577 23.7227182,23.7227182 C21.2344577,26.2109788 17.7969577,27.75 14,27.75 C10.2030423,27.75 6.76554234,26.2109788 4.27728176,23.7227182 C1.78902117,21.2344577 0.25,17.7969577 0.25,14 C0.25,10.2030423 1.78902117,6.76554234 4.27728176,4.27728176 C6.76554234,1.78902117 10.2030423,0.25 14,0.25 Z" stroke-linejoin="square"></path>
+                </g>
+                <line x1="9" y1="9" x2="19.5" y2="19.5" id="路径-9" stroke="#391B0F" stroke-width="2" stroke-linecap="round"></line>
+                <line x1="9" y1="9" x2="19.5" y2="19.5" id="路径-9备份" stroke="#391B0F" stroke-width="2" stroke-linecap="round" transform="translate(14.250000, 14.250000) scale(-1, 1) translate(-14.250000, -14.250000) "></line>
+            </g>
+        </g>
+    </g>
+</svg>

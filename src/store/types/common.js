@@ -1,0 +1,1 @@
+export const SET_CURRENCY_LIST = "SET_CURRENCY_LIST";

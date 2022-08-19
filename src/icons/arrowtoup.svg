@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient x1="50%" y1="-10.6456375%" x2="50%" y2="35.497036%" id="linearGradient-1">
+            <stop stop-color="#FB8000" offset="0%"></stop>
+            <stop stop-color="#FED283" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="规范切片" transform="translate(-1413.000000, -1300.000000)">
+            <g id="编组-9" transform="translate(1415.000000, 1302.000000)">
+                <rect id="矩形" stroke="#FB8000" stroke-width="4" opacity="0.200000003" stroke-linejoin="round" x="0" y="0" width="28" height="28"></rect>
+                <g id="编组-7" transform="translate(11.800000, 12.000000)" fill="url(#linearGradient-1)">
+                    <path d="M0.2,0 L4.2,0 L4.2,9 C4.2,10.1045695 3.3045695,11 2.2,11 C1.0954305,11 0.2,10.1045695 0.2,9 L0.2,0 L0.2,0 Z" id="矩形"></path>
+                </g>
+                <polyline id="路径-10" stroke="#FB8000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" points="9.5 14 14 9.5 18.5 14"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

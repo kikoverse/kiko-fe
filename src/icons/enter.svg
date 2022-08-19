@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="42px" viewBox="0 0 36 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画板备份-9" transform="translate(-381.000000, -917.000000)" stroke="#FFFFFF" stroke-width="5">
+            <g id="编组-6" transform="translate(314.000000, 899.000000)">
+                <g id="编组-17" transform="translate(70.000000, 21.000000)">
+                    <path d="M29,30 L29,33 C29,34.6568542 27.6568542,36 26,36 L3,36 L3,36 C1.34314575,36 0,34.6568542 0,33 L0,3 C0,1.34314575 1.34314575,0 3,0 L26,0 C27.6568542,0 29,1.34314575 29,3 L29,14.5" id="路径"></path>
+                    <polyline id="路径-17" points="20 15 13 22 20 29"></polyline>
+                    <line x1="13.5" y1="22" x2="32.5" y2="22" id="路径-21"></line>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

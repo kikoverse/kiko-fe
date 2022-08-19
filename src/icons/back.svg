@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="49px" height="36px" viewBox="0 0 49 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#EDEDED" offset="100%"></stop>
+        </linearGradient>
+        <path d="M11.7297561,0 L36,0 C38.7614237,-5.07265313e-16 41,2.23857625 41,5 L41,23 C41,25.7614237 38.7614237,28 36,28 L11.7297561,28 C10.0284373,28 8.44386473,27.1349007 7.52386369,25.703788 L1.7381494,16.703788 C0.679339236,15.0567499 0.679339236,12.9432501 1.7381494,11.296212 L7.52386369,2.29621204 C8.44386473,0.865099305 10.0284373,3.1252719e-16 11.7297561,0 Z" id="path-2"></path>
+        <filter x="-14.8%" y="-17.9%" width="131.8%" height="150.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.94213646   0 0 0 0 0.94213646   0 0 0 0 0.94213646  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <filter x="-8.7%" y="-8.9%" width="119.6%" height="132.1%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="规范切片" transform="translate(-154.000000, -1337.000000)">
+            <g id="编组-8" transform="translate(158.000000, 1339.000000)">
+                <g id="矩形">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                    <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                    <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-2"></use>
+                    <path stroke="#DFDFDF" stroke-width="0.5" d="M36,0.25 C37.3116763,0.25 38.4991763,0.78166186 39.3587572,1.64124279 C40.2183381,2.50082372 40.75,3.68832372 40.75,5 L40.75,5 L40.75,23 C40.75,24.3116763 40.2183381,25.4991763 39.3587572,26.3587572 C38.4991763,27.2183381 37.3116763,27.75 36,27.75 L36,27.75 L11.7297561,27.75 C10.1135032,27.75 8.6081593,26.9281557 7.73415831,25.5685986 L7.73415831,25.5685986 L1.94844402,16.5685986 C1.44550919,15.7862555 1.19404178,14.8931277 1.19404178,14 C1.19404178,13.1068723 1.44550919,12.2137445 1.94844402,11.4314014 L1.94844402,11.4314014 L7.73415831,2.43140144 C8.6081593,1.07184434 10.1135032,0.25 11.7297561,0.25 L11.7297561,0.25 L36,0.25 Z" stroke-linejoin="square"></path>
+                </g>
+                <polyline id="路径-6" stroke="#391B0F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="16 9.28571429 13 14 16 18.7142857"></polyline>
+                <line x1="13.5" y1="14" x2="32" y2="14" id="路径-7" stroke="#391B0F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+            </g>
+        </g>
+    </g>
+</svg>

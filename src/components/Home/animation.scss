@@ -1,0 +1,50 @@
+@keyframes grass1_slide {
+  from {
+    left: -280px;
+  }
+  to {
+    left: -30px;
+  }
+}
+@keyframes grass2_slide {
+  from {
+    left: -300px;
+  }
+  to {
+    left: -22px;
+  }
+}
+@keyframes zoom_bg {
+  from {
+    transform: scale(3);
+    opacity: 0.5;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes cat_in {
+  from {
+    right: -2000px;
+    bottom: -380px;
+  }
+  to {
+    bottom: -380px;
+    right: -30px;
+  }
+}
+@keyframes to_top {
+  0% {
+    top: 30vh;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+    top: 25vh;
+  }
+}

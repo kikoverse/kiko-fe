@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="29px" viewBox="0 0 40 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="卡牌制作" transform="translate(-615.000000, -477.000000)">
+            <g id="编组-18" transform="translate(584.000000, 452.000000)">
+                <g id="编组-17" transform="translate(31.000000, 25.000000)">
+                    <rect id="矩形" fill="#FF7700" opacity="0.100000001" x="0" y="0" width="40" height="28.75" rx="14.375"></rect>
+                    <g id="衣服" transform="translate(10.000000, 6.250000)" fill-rule="nonzero" stroke="#FF7700" stroke-linejoin="round" stroke-width="1.5">
+                        <path d="M15.9375,15.75 L2.8125,15.75 L2.8125,6.93479695 L-1.07443842,3.44408473 L3.2313475,-0.75 L7.87003164,-0.75 C7.5033667,-0.112273577 7.72128638,0.481470969 8.16932833,0.851336746 C8.48245961,1.10983162 8.90814886,1.26219512 9.375,1.26219512 C9.84274795,1.26219512 10.2702069,1.1093665 10.584202,0.850158554 C11.031599,0.4808252 11.2495779,-0.111702398 10.8700422,-0.75 L10.8700422,-0.75 L15.5186525,-0.75 L19.8244384,3.44408473 L16.0915009,7.08597496 L15.937,6.934 L15.9375,15.75 Z" id="路径"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

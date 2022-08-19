@@ -1,0 +1,50 @@
+/* -----------基础色-------------- */
+$black: #000000;
+$gray: #434343;
+$gary_dark: #363636;
+$gray_light: #757575;
+$white: #ffffff;
+$red: #f36346;
+$green: #0ec89b;
+$blue: #0079ed;
+$opacity_bg_color: #1f233d;
+$orange: #fba800;
+
+/* -----------基础色-------------- */
+
+/* -----------系统色-------------- */
+$theme_light_color: $orange;
+$theme_gray_color: $gray;
+$theme_danger_color: $red;
+$theme_disabled_color: $gray_light;
+
+// $base_light_color: $white;
+// $base_color: $black;
+// $base_gray_background_color: $gray_color;
+// $gray: $gray_font_color;
+// $danger: $red;
+// $success: $green;
+// $primary: $blue;
+// $hover_bg_color: $opacity_bg_color;
+// $theme_light_color: $orange;
+
+/* -----------系统色-------------- */
+
+/* -----------字体大小-------------- */
+
+$font12: 12px;
+$font14: 14px;
+$font16: 16px;
+$font18: 18px;
+$font20: 20px;
+$font22: 22px;
+$font24: 24px;
+$font26: 26px;
+
+/* -----------字体大小-------------- */
+
+$width: 1400px;
+
+// https://www.bluematador.com/blog/how-to-share-variables-between-js-and-sass
+// https://stackoverflow.com/questions/66119188/how-to-get-scss-variables-into-react
+//

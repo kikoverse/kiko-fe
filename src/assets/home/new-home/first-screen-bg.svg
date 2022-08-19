@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1240px" height="571px" viewBox="0 0 1240 571" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>画板备份 25</title>
+    <defs>
+        <linearGradient x1="99.1494456%" y1="100%" x2="1.4574014%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#DE9E00" offset="0%"></stop>
+            <stop stop-color="#FFEDC0" offset="100%"></stop>
+        </linearGradient>
+        <radialGradient cx="82.1123047%" cy="79.9611003%" fx="82.1123047%" fy="79.9611003%" r="100%" id="radialGradient-2">
+            <stop stop-color="#FBA800" offset="0%"></stop>
+            <stop stop-color="#FFEA75" offset="100%"></stop>
+        </radialGradient>
+        <linearGradient x1="100%" y1="100%" x2="50.505354%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#FF0000" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FF1F1F" offset="100%"></stop>
+        </linearGradient>
+        <filter x="0.0%" y="0.0%" width="100.0%" height="100.0%" filterUnits="objectBoundingBox" id="filter-4">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="页面-4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画板备份-25" transform="translate(0.000000, -73.000000)">
+            <g id="编组-33" transform="translate(-4300.000000, 66.000000)">
+                <rect id="矩形" fill="#000000" x="4300" y="7" width="1240" height="571"></rect>
+                <g id="编组-32">
+                    <rect id="矩形" fill="url(#linearGradient-1)" opacity="0.122186025" x="4300" y="7" width="1240" height="571"></rect>
+                    <rect id="矩形备份-83" fill-opacity="0.8955283" fill="#FFFBDF" opacity="0.300000012" transform="translate(4920.000000, 182.000000) scale(1, -1) translate(-4920.000000, -182.000000) " x="4300" y="7" width="1240" height="350"></rect>
+                    <g id="编组-52" opacity="0.563775925" transform="translate(0.000000, 7.000000)" stroke="#FFFFFF">
+                        <line x1="4974.72116" y1="0.0761518378" x2="4974.72116" y2="569.75114" id="路径-6" stroke-width="2" opacity="0.5"></line>
+                        <line x1="4300" y1="379.076152" x2="5540" y2="379.076152" id="路径-23备份" stroke-width="2" opacity="0.200000003"></line>
+                        <line x1="4300" y1="429.076152" x2="5540" y2="429.076152" id="路径-23备份-2" stroke-width="2" opacity="0.300000012"></line>
+                        <line x1="4300" y1="531.076152" x2="5540" y2="531.076152" id="路径-23备份-3" stroke-width="2"></line>
+                        <line x1="5162.63252" y1="351.076152" x2="5677" y2="569.576152" id="路径-25备份-4"></line>
+                        <line x1="4895.07715" y1="351.076152" x2="4729.3121" y2="565.076152" id="路径-25"></line>
+                        <line x1="5057.13252" y1="351.076152" x2="5340.86748" y2="569.576152" id="路径-25备份-3"></line>
+                        <line x1="4775.26505" y1="351.076152" x2="4384" y2="560.576152" id="路径-25备份"></line>
+                        <line x1="4631.89757" y1="351.076152" x2="3887" y2="489.576152" id="路径-25备份-2"></line>
+                    </g>
+                    <g id="编组-51" transform="translate(4898.500000, 292.500000) scale(-1, 1) translate(-4898.500000, -292.500000) translate(4090.000000, 7.000000)">
+                        <rect id="矩形备份-81" fill="url(#radialGradient-2)" x="1230" y="92" width="50" height="50" rx="25"></rect>
+                        <polygon id="矩形" fill="#FECA4A" points="777 0 911 0 874.17652 61.9903377 766 60.5626787"></polygon>
+                        <polygon id="矩形" fill="#FED364" opacity="0.5" points="685.205 36 992 36 888.205 160 685.205 160"></polygon>
+                        <polygon id="矩形" fill="#FFE4A0" opacity="0.5" points="723 516 876.710236 516 906 571 723 571"></polygon>
+                        <polygon id="矩形" fill="#FED364" opacity="0.5" points="247.349121 0 517.349121 0 581 110.19218 373.349121 110.19218"></polygon>
+                        <polygon id="矩形备份-55" fill="#FED364" opacity="0.400000006" transform="translate(196.000000, 454.000000) scale(1, -1) translate(-196.000000, -454.000000) " points="0 422 270 422 392 486 245 486"></polygon>
+                        <g id="编组-7" transform="translate(1035.000000, 25.000000)">
+                            <polygon id="矩形" fill="#DE9E00" points="88.571939 0 460.736246 0 460.736246 44 88.571939 44"></polygon>
+                            <polygon id="矩形备份-21" fill="#FBE283" points="88.571939 7.10542736e-14 -2.13162821e-14 96.8400251 -2.13162821e-14 132.284827 88.571939 44"></polygon>
+                            <polygon id="矩形备份-20" fill="#FECA4A" points="-2.84217094e-14 131.816878 288.675333 131.816878 460.736246 44 88.571939 44"></polygon>
+                        </g>
+                        <g id="编组-6" transform="translate(1295.000000, 199.000000)">
+                            <rect id="矩形" fill="#FECA4A" x="50.5779419" y="0" width="86" height="13"></rect>
+                            <polygon id="矩形备份-22" fill="#FFF5DD" transform="translate(25.288971, 11.250000) scale(-1, 1) translate(-25.288971, -11.250000) " points="7.10542736e-15 0 50.5779419 13 50.5779419 22.5 7.10542736e-15 13"></polygon>
+                            <polygon id="矩形备份-23" fill="#DAA231" transform="translate(68.288971, 17.750000) scale(-1, 1) translate(-68.288971, -17.750000) " points="0 13 46.1798096 22.5 136.577942 22.5 86 13"></polygon>
+                        </g>
+                        <g id="编组-6备份" transform="translate(231.500000, 256.000000) scale(-1, 1) translate(-231.500000, -256.000000) translate(163.000000, 246.000000)">
+                            <polygon id="矩形" fill="#E9CD86" points="50.5779419 0.110977173 136.577942 0.110977173 136.577942 10 50.5779419 10"></polygon>
+                            <polygon id="矩形备份-22" fill="#FFF5DD" transform="translate(25.288971, 9.805489) scale(-1, 1) translate(-25.288971, -9.805489) " points="0 0.110977173 50.5779419 13.1109772 50.5779419 19.5 0 10"></polygon>
+                            <polygon id="矩形备份-23" fill="#C1A978" transform="translate(68.288971, 14.750000) scale(-1, 1) translate(-68.288971, -14.750000) " points="0 10 46.1798096 19.5 136.577942 19.5 86 10"></polygon>
+                        </g>
+                        <g id="编组-6备份-3" transform="translate(231.500000, 256.000000) scale(-1, 1) translate(-231.500000, -256.000000) translate(163.000000, 246.000000)">
+                            <polygon id="矩形" fill="#E9CD86" points="50.5779419 0.110977173 136.577942 0.110977173 136.577942 10 50.5779419 10"></polygon>
+                            <polygon id="矩形备份-22" fill="#FFF5DD" transform="translate(25.288971, 9.805489) scale(-1, 1) translate(-25.288971, -9.805489) " points="0 0.110977173 50.5779419 13.1109772 50.5779419 19.5 0 10"></polygon>
+                            <polygon id="矩形备份-23" fill="#C1A978" transform="translate(68.288971, 14.750000) scale(-1, 1) translate(-68.288971, -14.750000) " points="0 10 46.1798096 19.5 136.577942 19.5 86 10"></polygon>
+                        </g>
+                        <g id="编组-6备份-5" transform="translate(1255.000000, 231.000000)">
+                            <polygon id="矩形" fill="#E9CD86" points="37.9334564 0.0832328796 102.433456 0.0832328796 102.433456 7.5 37.9334564 7.5"></polygon>
+                            <polygon id="矩形备份-22" fill="#FFF5DD" transform="translate(18.966728, 7.354116) scale(-1, 1) translate(-18.966728, -7.354116) " points="0 0.0832328796 37.9334564 9.83323288 37.9334564 14.625 0 7.5"></polygon>
+                            <polygon id="矩形备份-23" fill="#C1A978" transform="translate(51.216728, 11.062500) scale(-1, 1) translate(-51.216728, -11.062500) " points="0 7.5 34.6348572 14.625 102.433456 14.625 64.5 7.5"></polygon>
+                        </g>
+                        <g id="编组-6备份-2" transform="translate(206.500000, 205.000000) scale(-1, 1) translate(-206.500000, -205.000000) translate(138.000000, 188.000000)">
+                            <polygon id="矩形" fill="#FECA4A" points="50.5779419 0.0577087402 136.577942 0.0577087402 136.577942 9.94673157 50.5779419 9.94673157"></polygon>
+                            <polygon id="矩形备份-22" fill="#FFD674" transform="translate(25.288971, 16.778854) scale(-1, 1) translate(-25.288971, -16.778854) " points="0 0.0577087402 50.5779419 27.1109772 50.5779419 33.5 0 9.94673157"></polygon>
+                            <polygon id="矩形备份-23" fill="#DAA231" transform="translate(68.288971, 21.723366) scale(-1, 1) translate(-68.288971, -21.723366) " points="0 9.94673157 46.1798096 33.5 136.577942 33.5 86 9.94673157"></polygon>
+                        </g>
+                        <g id="编组-50" transform="translate(1230.000000, 372.000000)">
+                            <g id="编组-4">
+                                <polygon id="矩形" fill="#E8C982" points="1.42108547e-14 24.1340332 185.152344 52.8508911 185.152344 68.1340332 1.42108547e-14 34.1340332"></polygon>
+                                <polygon id="矩形备份-24" fill="#FFE7B2" points="0 24.1340332 185.152344 52.8508911 319 52.8508911 169 20.6828003"></polygon>
+                                <polygon id="矩形" fill="#E8C982" points="26 8.58526611 211.152344 29.5943756 211.152344 50.6034851 26 24.7622681"></polygon>
+                                <polygon id="矩形备份-24" fill="#FFE7B2" points="26 8.58526611 211.152344 29.5943756 345 37.302124 195 5.1340332"></polygon>
+                                <polygon id="矩形备份-59" fill="#E8C982" points="68 7.70938868e-13 253.152344 15.5943756 253.152344 29.5943756 68 10.7622681"></polygon>
+                                <polygon id="矩形备份-58" fill="#FFE7B2" points="68 1.17239551e-13 253.152344 15.5943756 387 23.302124 237 1.17239551e-13"></polygon>
+                            </g>
+                        </g>
+                        <g id="编组-9" transform="translate(851.000000, 426.000000)">
+                            <rect id="矩形" fill="#DABF7D" x="43.6136475" y="60" width="199" height="19"></rect>
+                            <polygon id="矩形备份-80" fill="#FED364" points="43.6136475 60 242.613647 60 153.828247 9.2437439 -1.42108547e-14 9.2437439"></polygon>
+                            <polygon id="矩形备份-79" fill="#917347" points="43.6136475 60 3.90798505e-14 9.2437439 3.90798505e-14 21.0561676 43.6136475 79"></polygon>
+                            <rect id="矩形" fill="#DABF7D" x="54.3238831" y="38.0671921" width="149.25" height="14.25"></rect>
+                            <polygon id="矩形备份-80" fill="#FED364" points="54.3238831 38.0671921 203.573883 38.0671921 135.771118 1.49213975e-13 9.875 1.49213975e-13"></polygon>
+                            <polygon id="矩形备份-79" fill="#917347" points="54.3238831 38.0671921 9.875 9.9475983e-14 9.875 8.85931778 54.3238831 52.3171921"></polygon>
+                        </g>
+                    </g>
+                    <rect id="矩形" fill="#000000" opacity="0.608956473" x="4300" y="7" width="1240" height="571"></rect>
+                    <rect id="矩形" fill="url(#linearGradient-3)" style="mix-blend-mode: saturation;" filter="url(#filter-4)" x="4301" y="0" width="723" height="570"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

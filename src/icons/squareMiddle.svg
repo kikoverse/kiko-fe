@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="35px" height="70px" viewBox="0 0 35 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 13</title>
+    <g id="兑换" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画板" transform="translate(-1883.000000, -1824.000000)">
+            <g id="编组-13" transform="translate(1883.969240, 1824.260491)">
+                <g id="编组-2" transform="translate(16.156869, 34.239977) rotate(1.000000) translate(-16.156869, -34.239977) translate(0.590548, 0.266495)">
+                    <g id="编组-3备份-13" transform="translate(16.246964, 54.535699) rotate(274.000000) translate(-16.246964, -54.535699) translate(3.746964, 41.035699)">
+                        <polygon id="路径-78" fill="#FECA4A" points="12.1965568 12.6744835 12.1965568 26.1 0.571022981 18.8294343 0.0465567885 6.525"></polygon>
+                        <polygon id="路径-78备份-2" fill="#FFE689" points="12.191575 12.7125 24.1215568 6.24030867 12.191575 -2.32076078e-14 0.0465567885 6.56694338"></polygon>
+                        <polygon id="路径-78备份" fill="#E4A21A" points="12.1965568 12.6672947 12.1965568 26.1 24.1215568 18.8631664 24.1215568 6.1875"></polygon>
+                    </g>
+                    <g id="编组-3备份-2" transform="translate(15.566321, 15.541639) rotate(-46.000000) translate(-15.566321, -15.541639) translate(5.066321, 4.041639)">
+                        <polygon id="路径-78" fill="#F7B01F" points="10.4077285 10.8155592 10.4077285 22.272 0.487272944 16.0677839 0.0397284595 5.568"></polygon>
+                        <polygon id="路径-78备份-2" fill="#FFE689" points="10.4034773 10.848 20.5837285 5.3250634 10.4034773 -1.98038254e-14 0.0397284595 5.60379168"></polygon>
+                        <polygon id="路径-78备份" fill="#E4A21A" points="10.4077285 10.8094248 10.4077285 22.272 20.5837285 16.0965686 20.5837285 5.28"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
