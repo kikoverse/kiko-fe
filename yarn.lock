@@ -4482,9 +4482,9 @@ elegant-spinner@^1.0.1:
   resolved "https://registry.yarnpkg.com/elegant-spinner/-/elegant-spinner-1.0.1.tgz#db043521c95d7e303fd8f345bedc3349cfb0729e"
   integrity sha1-2wQ1IcldfjA/2PNFvtwzSc+wcp4=
 
-element-plus@^1.3.0-beta.1:
+element-plus@1.3.0-beta.1:
   version "1.3.0-beta.1"
-  resolved "https://registry.yarnpkg.com/element-plus/-/element-plus-1.3.0-beta.1.tgz#4df67fcedb0c13d14c9f54eea7b739109f5df49f"
+  resolved "https://registry.npmmirror.com/element-plus/-/element-plus-1.3.0-beta.1.tgz#4df67fcedb0c13d14c9f54eea7b739109f5df49f"
   integrity sha512-q3vMaKElPpuSTeIF7kuDmMOE+N1YVCCIG3fshXpz6qgjnxPbgZumVM0qGfhr8DTu9JxRbBoDok49dqtX/BWn3w==
   dependencies:
     "@ctrl/tinycolor" "^3.4.0"

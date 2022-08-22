@@ -22,10 +22,14 @@
         <template #tip>
           <div class="el-upload__tip">
             {{
-              $t("File types supported:{extension}，Max size:{size}", {
-                extension: "JPG, PNG, GIF, JPEG",
-                size: "5 MB",
-              })
+              $t(
+                "File types supported:{extension}，Max size:{size},aspect ratio:{ratio}",
+                {
+                  extension: "JPG, PNG, GIF, JPEG",
+                  size: "5 MB",
+                  ratio: "7/5-13/8",
+                }
+              )
             }}
           </div>
         </template>
@@ -260,8 +264,23 @@ const handleAvatarSuccess = (response, uploadFile) => {
   form.avatar = uploadFile.raw;
   imageUrl.value = URL.createObjectURL(uploadFile.raw);
 };
-
-const beforeAvatarUpload = (rawFile) => {
+const getFileWidthAndHeight = (file) => {
+  return new Promise((resolve) => {
+    let _URL = window.URL || window.webkitURL;
+    let img = new Image();
+    img.src = _URL.createObjectURL(file);
+    img.onload = function () {
+      resolve({
+        width: img.width,
+        height: img.height,
+      });
+    };
+  });
+};
+const beforeAvatarUpload = async (rawFile) => {
+  const { width, height } = await getFileWidthAndHeight(rawFile);
+  console.log(width / height);
+  console.log(width / height < 1.62 && width / height > 1.42);
   if (
     !(
       rawFile.type == "image/jpeg" ||
@@ -271,9 +290,27 @@ const beforeAvatarUpload = (rawFile) => {
     )
   ) {
     ElMessage.error("Picture must be JPEG/JPG/PNG/GIF format!");
+    setTimeout(() => {
+      form.avatar = "";
+      imageUrl.value = "";
+    });
+
     return false;
-  } else if (rawFile.size / 1024 / 1024 > 100) {
-    ElMessage.error("Avatar picture size can not exceed 100MB!");
+  } else if (rawFile.size / 1024 / 1024 > 5) {
+    ElMessage.error("Avatar picture size can not exceed 5MB!");
+    setTimeout(() => {
+      form.avatar = "";
+      imageUrl.value = "";
+    });
+    return false;
+  } else if (width / height > 1.625 || width / height < 1.4) {
+    setTimeout(() => {
+      form.avatar = "";
+      imageUrl.value = "";
+    });
+    ElMessage.error(
+      "Avatar picture aspect ratio can not higher than 13/8 and not be lower than 7/5"
+    );
     return false;
   }
   return true;

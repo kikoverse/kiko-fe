@@ -330,7 +330,7 @@
     "铸造成功":"鑄造成功",
     "铸造失败":"鑄造失敗",
     "我的系列":"我的系列",
-    "File types supported:{extension}，Max size:{size}":"建議檔案格式為：{extension}，檔案最大：{size}",
+    "File types supported:{extension}，Max size:{size},aspect ratio:{ratio}":"建議檔案格式為：{extension}，檔案最大：{size},寬高比：{ratio}",
     "请输入":"請輸入",
     "请选择":"請選擇",
     "Art":"藝術",
@@ -340,7 +340,8 @@
     "Collectibles":"收藏品",
     "Virtual worlds":"虛擬世界",
     "请输入属性名":"請輸入屬性名",
-    "请输入属性值":"請輸入屬性值"
+    "请输入属性值":"請輸入屬性值",
+    "Avatar picture aspect ratio can not higher than 13/8 and not be lower than 7/5":"图片宽高比不超过 13/8 并且不低于 7/5"
   },
   "farms": {
     "farm-swap-total-1": "總交易額",

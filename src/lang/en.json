@@ -332,7 +332,7 @@
     "铸造成功":"Mint Success",
     "铸造失败":"Mint Failed",
     "我的系列":"My Collections",
-    "File types supported:{extension}，Max size:{size}":"File types supported:{extension}，Max size:{size}",
+    "File types supported:{extension}，Max size:{size},aspect ratio:{ratio}":"File types supported:{extension}，Max size:{size},aspect ratio:{ratio}",
     "请输入":"Please Input",
     "请选择":"Please Select",
     "Art":"Art",
@@ -342,7 +342,8 @@
     "Collectibles":"Collectibles",
     "Virtual worlds":"Virtual worlds",
     "请输入属性名":"Please input properties name",
-    "请输入属性值":"Please Input properties value"
+    "请输入属性值":"Please Input properties value",
+    "Avatar picture aspect ratio can not higher than 13/8 and not be lower than 7/5":"Avatar picture aspect ratio can not higher than 13/8 and not be lower than 7/5"
   },
   "farms": {
     "farm-swap-total-1": "Total trading volume",

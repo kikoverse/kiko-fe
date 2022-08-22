@@ -15,17 +15,20 @@
         :show-file-list="false"
         drag
         :on-success="handleAvatarSuccess"
-        :before-upload="beforeAvatarUpload"
       >
         <img v-if="imageUrl" :src="imageUrl" class="avatar" />
         <el-icon v-else class="avatar-uploader-icon"><Plus /></el-icon>
         <template #tip>
           <div class="el-upload__tip">
             {{
-              $t("File types supported:{extension}，Max size:{size}", {
-                extension: "JPG, PNG, GIF, JPEG",
-                size: "5 MB",
-              })
+              $t(
+                "File types supported:{extension}，Max size:{size},aspect ratio:{ratio}",
+                {
+                  extension: "JPG, PNG, GIF, JPEG",
+                  size: "5 MB",
+                  ratio: "9/10-3/2",
+                }
+              )
             }}
           </div>
         </template>
@@ -241,16 +244,6 @@ const handleAvatarSuccess = (response, uploadFile) => {
   imageUrl.value = URL.createObjectURL(uploadFile.raw);
 };
 
-const beforeAvatarUpload = () => {
-  // if (rawFile.type !== 'image/jpeg') {
-  //   ElMessage.error('Avatar picture must be JPG format!')
-  //   return false
-  // } else if (rawFile.size / 1024 / 1024 > 2) {
-  //   ElMessage.error('Avatar picture size can not exceed 2MB!')
-  //   return false
-  // }
-  return true;
-};
 const Add = () => {
   form.attributes.push({ attribute: "", value: "" });
 };
