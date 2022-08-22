@@ -317,7 +317,6 @@ const isNFT = (type) => NFT_CONSTANTS.NFT_TYPES.indexOf(type) > -1;
 
 const watchDetail = (d, sellType, account) => {
   state.coreType = "card";
-  debugger;
   if (sellType === "unsold") {
     let query = {};
     if (isNFT(d.type)) {
