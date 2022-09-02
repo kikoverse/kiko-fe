@@ -55,6 +55,7 @@ getAirdropList().then((res) => {
 });
 const handleSucceed = () => {
   dialogSetting.dialogVisible = false;
+  window.location.reload();
 };
 const clickAirdop = async (item) => {
   dialogSetting.dialogVisible = true;
