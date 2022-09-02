@@ -23,7 +23,7 @@
   </div>
   <Fly-wallet-dialog
     :dialogParams="dialogSetting"
-    @handleFailed="handleFailed"
+    @handleFailed="handleSucceed"
     @handleClose="handleSucceed"
     @handleSucceed="handleSucceed"
   >
