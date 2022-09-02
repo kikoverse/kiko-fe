@@ -82,6 +82,7 @@ const pushPage = (path) => {
 };
 
 const isActivePath = (path) => {
+  console.log(path, state.currentRoute);
   if (Array.isArray(path)) {
     console.log("state.currentRoute", state.currentRoute);
     if (path.indexOf(state.currentRoute) > -1) {

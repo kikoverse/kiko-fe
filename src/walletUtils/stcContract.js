@@ -64,7 +64,57 @@ export const getContractWidthSinger = async (
     throw error;
   }
 };
-
+export const getContractWidthSingerAddress = async (
+  providers,
+  contract,
+  tyArgs,
+  cb,
+  ...args
+) => {
+  try {
+    let funcId = contract;
+    // if (funcName) {
+    //   funcId = contract;
+    // }
+    console.log("getContractWidthSinger:=======", funcId, tyArgs, args);
+    const nodeUrl = "https://main-seed.starcoin.org"; // 节点RPC地址
+    const scriptFunction = await utils.tx.encodeScriptFunctionByResolve(
+      funcId,
+      tyArgs,
+      args,
+      nodeUrl
+    );
+    const payloadInHex = (function () {
+      const se = new bcs.BcsSerializer();
+      scriptFunction.serialize(se);
+      return hexlify(se.getBytes());
+    })();
+    const txhash = await providers.getSigner().sendUncheckedTransaction({
+      data: payloadInHex,
+    });
+    cb && cb({ hash: txhash });
+    return new Promise((resolve) => {
+      let timer = setInterval(() => {
+        getTransactionInfo(txhash).then((res) => {
+          if (res.result) {
+            if (res.result.status === "Executed") {
+              resolve(200);
+            } else {
+              resolve("failed");
+              console.error("合约失败:", res.result);
+            }
+            clearInterval(timer);
+          } else {
+            console.log(txhash);
+          }
+        });
+      }, 1000);
+    });
+  } catch (error) {
+    console.error("contract err", error);
+    throw error;
+  }
+};
 /**
  * @name: 根据 txhash 查询链上信息
  * author: zhannan.zhang

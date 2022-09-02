@@ -32,4 +32,8 @@ export default [
     label: "行情",
     path: "/info",
   },
+  {
+    label: "aptos预热",
+    path: "/aptosPreheat",
+  },
 ];

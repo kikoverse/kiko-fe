@@ -179,6 +179,15 @@ const routes = [
           url: "/metaverse",
         },
       },
+      {
+        path: "/aptosPreheat",
+        component: () => import("@views/AptosPreheat/Index.vue"),
+        name: "aptosPreheat",
+        meta: {
+          title: "aptosPreheat",
+          url: "/aptosPreheat",
+        },
+      },
     ],
   },
 ];
