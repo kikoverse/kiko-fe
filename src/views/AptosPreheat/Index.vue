@@ -18,6 +18,16 @@
             ? `${item.cnName}`
             : ""
         }}</span>
+        <div
+          :class="$style['item-desc']"
+          v-html="
+            store.state.StoreApp.currLang === 'en'
+              ? item.enRule
+              : store.state.StoreApp.currLang === 'zh'
+              ? item.cnRule
+              : ''
+          "
+        ></div>
       </div>
     </div>
   </div>
@@ -108,9 +118,11 @@ $black: #010e22;
     border-top-left-radius: $border-radius;
     border-top-right-radius: $border-radius;
     background: #e8906c;
+    display: flex;
+    justify-content: center;
     img {
       cursor: pointer;
-      width: 100%;
+      height: 100%;
       border-top-left-radius: $border-radius;
       border-top-right-radius: $border-radius;
     }
@@ -118,8 +130,6 @@ $black: #010e22;
   .item-content {
     padding: 12px 16px 24px 16px;
     color: #fff;
-    display: flex;
-    justify-content: space-between;
     .category {
       display: block;
       background: rgba(251, 168, 0, 0.3);
@@ -128,6 +138,11 @@ $black: #010e22;
       height: 23px;
       line-height: 23px;
       padding: 0 10px;
+    }
+    .item-desc {
+      margin-top: 5px;
+      font-size: 12px;
+      color: #fba800;
     }
   }
 }
