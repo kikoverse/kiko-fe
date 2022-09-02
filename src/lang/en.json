@@ -343,7 +343,11 @@
     "Virtual worlds":"Virtual worlds",
     "请输入属性名":"Please input properties name",
     "请输入属性值":"Please Input properties value",
-    "Avatar picture aspect ratio can not higher than 13/8 and not be lower than 7/5":"Avatar picture aspect ratio can not higher than 13/8 and not be lower than 7/5"
+    "Avatar picture aspect ratio can not higher than 13/8 and not be lower than 7/5":"Avatar picture aspect ratio can not higher than 13/8 and not be lower than 7/5",
+    "Aptos预热":"Aptos preheating",
+    "正在领取":"Purchasing",
+    "领取成功":"Purchased",
+    "领取失败":"Failed"
   },
   "farms": {
     "farm-swap-total-1": "Total trading volume",

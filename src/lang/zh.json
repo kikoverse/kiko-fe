@@ -341,7 +341,11 @@
     "Virtual worlds":"虛擬世界",
     "请输入属性名":"請輸入屬性名",
     "请输入属性值":"請輸入屬性值",
-    "Avatar picture aspect ratio can not higher than 13/8 and not be lower than 7/5":"图片宽高比不超过 13/8 并且不低于 7/5"
+    "Avatar picture aspect ratio can not higher than 13/8 and not be lower than 7/5":"图片宽高比不超过 13/8 并且不低于 7/5",
+    "Aptos预热":"Aptos預熱",
+    "正在领取":"正在領取",
+    "领取成功":"領取成功",
+    "领取失败":"領取失敗"
   },
   "farms": {
     "farm-swap-total-1": "總交易額",

@@ -33,7 +33,7 @@ export default [
     path: "/info",
   },
   {
-    label: "aptos预热",
+    label: "Aptos预热",
     path: "/aptosPreheat",
   },
 ];
