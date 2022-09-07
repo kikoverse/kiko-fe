@@ -116,7 +116,7 @@ $black: #010e22;
   }
   .img-box {
     width: 100%;
-    height: 200px;
+    height: 100%;
     position: relative;
     cursor: pointer;
     overflow: hidden;
