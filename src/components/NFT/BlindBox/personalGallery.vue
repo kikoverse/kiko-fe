@@ -32,8 +32,6 @@ import { computed, reactive, onUnmounted, watchEffect } from "vue";
 import FlySpace from "@FlyUI/FlySpace.vue";
 import { useStore } from "vuex";
 import { getGalleryList } from "../../../api/nft/blindbox";
-import { useRouter } from "vue-router";
-const router = useRouter();
 const store = useStore();
 
 let state = reactive({
@@ -42,13 +40,7 @@ let state = reactive({
   accounts: computed(() => store.state.StoreWallet.accounts),
 });
 const goDetail = (d) => {
-  router.push({
-    name: "GalleryDetail",
-    query: {
-      body: d.body,
-      meta: d.meta,
-    },
-  });
+  window.open(`/GalleryDetail?body=${d.body}&meta=${d.meta}`);
 };
 watchEffect(() => {
   if (state.accounts[0]) {
