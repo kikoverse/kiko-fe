@@ -20,6 +20,16 @@
 .el-dropdown-menu__item:not(.is-disabled):hover {
   color: #000;
 }
+.el-message-box{
+  background-color: #000;
+  .el-input__inner{
+    color: #000;
+  }
+  .el-button{
+    background-color: #fba800;
+  }
+
+}
 .el-upload-dragger{
   background-color:transparent;
   width: auto;

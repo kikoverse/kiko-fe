@@ -70,6 +70,24 @@ const routes = [
         },
       },
       {
+        path: "/PersonalGallery",
+        component: () => import("@views/NFT/BlindBox/PersonalGallery.vue"),
+        name: "PersonalGallery",
+        meta: {
+          title: "陈列室",
+          url: "/PersonalGallery",
+        },
+      },
+      {
+        path: "/GalleryDetail",
+        component: () => import("@views/NFT/BlindBox/GalleryDetail.vue"),
+        name: "GalleryDetail",
+        meta: {
+          title: "陈列室详情",
+          url: "/GalleryDetail",
+        },
+      },
+      {
         path: "/nftblindbox/:id",
         component: () => import("@views/NFT/BlindBox/Detail.vue"),
         name: "nftblindboxdetail",

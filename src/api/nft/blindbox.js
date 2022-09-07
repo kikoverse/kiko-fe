@@ -8,6 +8,29 @@ function getOfferingList(params) {
   });
 }
 
+export function getGalleryList(params) {
+  console.log(params);
+  return request({
+    url: "/v1/nft/meta/gallery/" + params,
+    method: "GET",
+  });
+}
+
+export function isGalleryDetail(params) {
+  console.log(params);
+  return request({
+    url: `/v1/nft/meta/isGallery/${params.meta}/${params.body}/${params.address}`,
+    method: "GET",
+  });
+}
+
+export function getGalleryDetail(params) {
+  console.log(params);
+  return request({
+    url: `/v1/nft/meta/gallery/${params.meta}/${params.body}/${params.address}`,
+    method: "GET",
+  });
+}
 export function getOfferingBoxData(id) {
   return request({
     url: `/v1/nft/box/offering/${id}`,
