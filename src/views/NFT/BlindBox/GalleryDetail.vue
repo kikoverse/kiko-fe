@@ -116,16 +116,18 @@ $black: #010e22;
   }
   .img-box {
     width: 100%;
-    height: 100%;
+    height: 200px;
     position: relative;
     cursor: pointer;
     overflow: hidden;
     border-top-left-radius: $border-radius;
     border-top-right-radius: $border-radius;
     background: #e8906c;
+    text-align: center;
     img {
       cursor: pointer;
       width: 100%;
+      height: 100%;
       border-top-left-radius: $border-radius;
       border-top-right-radius: $border-radius;
     }
