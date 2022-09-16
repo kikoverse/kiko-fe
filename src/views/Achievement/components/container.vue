@@ -1,5 +1,6 @@
 <template>
   <div v-if="state.firstLoading">
+    <h1>Hey {{ store.state.StoreWallet.accounts[0] }}!</h1>
     <div class="container" v-for="item in state.list" :key="item.year">
       <h3>2022</h3>
       <div class="itemBox">
@@ -203,6 +204,10 @@ getClaimedList(store.state.StoreWallet.accounts[0]).then((res) => {
 });
 </script>
 <style lang="scss" scoped>
+h1 {
+  color: #fff;
+  font-size: 20px;
+}
 .container {
   color: #fff;
   margin-bottom: 40px;
