@@ -76,7 +76,7 @@ import { useStore } from "vuex";
 const store = useStore();
 
 let state = reactive({
-  listData: [],
+  listData: computed(() => store.state.StoreBlindBox.listData),
   timers: null,
   listStatus: computed(() => store.state.StoreBlindBox.listStatus),
   firstLoading: computed(() => store.state.StoreBlindBox.firstLoading),

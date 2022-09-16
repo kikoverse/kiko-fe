@@ -1,4 +1,5 @@
 <template>
+  <FlySpecialBg></FlySpecialBg>
   <div class="container">
     <div
       class="nft-card-item"
@@ -54,7 +55,7 @@ import { WALLET_DIALOG_PARAMS } from "../../constants/dialog";
 import { getContractWidthSingerAddress } from "../../walletUtils/stcContract";
 import FlyWalletDialog from "@FlyUI/FlyWalletDialog.vue";
 import FlyButton from "../../FlyUI/FlyButton.vue";
-
+import FlySpecialBg from "@FlyUI/FlySpecialBg.vue";
 const store = useStore();
 const state = reactive({
   list: [],

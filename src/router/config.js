@@ -79,6 +79,15 @@ const routes = [
         },
       },
       {
+        path: "/Achievement",
+        component: () => import("@views/Achievement/index.vue"),
+        name: "Achievement",
+        meta: {
+          title: "成就",
+          url: "/Achievement",
+        },
+      },
+      {
         path: "/GalleryDetail",
         component: () => import("@views/NFT/BlindBox/GalleryDetail.vue"),
         name: "GalleryDetail",
