@@ -36,4 +36,8 @@ export default [
     label: "Aptos预热",
     path: "/aptosPreheat",
   },
+  {
+    label: "成就",
+    path: "/Achievement",
+  },
 ];
