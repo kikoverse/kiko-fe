@@ -347,7 +347,11 @@
     "Aptos预热":"Aptos preheating",
     "正在领取":"Purchasing",
     "领取成功":"Purchased",
-    "领取失败":"Failed"
+    "领取失败":"Failed",
+    "成就":"成就",
+    "领取":"Receive",
+    "还未导入陈列室，正在导入":"Not imported nftgallery, importing",
+    "导入成功,正在领取":"Purchased"
   },
   "farms": {
     "farm-swap-total-1": "Total trading volume",
