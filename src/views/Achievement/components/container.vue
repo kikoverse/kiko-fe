@@ -4,21 +4,21 @@
     <div class="title">POAP</div>
     <div class="nav">
       <div class="nav-l">
-        <h1>Hey {{ props.account }}!</h1>
+        <h1>{{ $t("Hey") }} {{ props.account }}</h1>
         <div class="nav-list">
           <div
             class="nav-item"
             :class="{ active: isClaimed == 1 }"
             @click="checkItem(1)"
           >
-            Claimed <span></span>
+            {{ $t("Claimed") }} <span></span>
           </div>
           <div
             class="nav-item"
             :class="{ active: isClaimed == 2 }"
             @click="checkItem(2)"
           >
-            Unclaimed <span></span>
+            {{ $t("Unclaimed") }} <span></span>
           </div>
         </div>
       </div>
@@ -64,7 +64,7 @@
     </template>
     <div class="none-box" v-else>
       <img src="../../../assets/poap/none.png" class="none" alt="" />
-      <p>You don't have any POAP yet</p>
+      <p>{{ $t("You don't have any POAP yet") }}</p>
     </div>
   </div>
 
