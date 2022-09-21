@@ -1,23 +1,70 @@
 <template>
-  <div v-if="state.firstLoading">
-    <h1>Hey {{ store.state.StoreWallet.accounts[0] }}!</h1>
-    <div class="container" v-for="item in state.list" :key="item.year">
-      <h3>2022</h3>
-      <div class="itemBox">
-        <div
-          class="item"
-          :class="{ get: d.isHas }"
-          v-for="d in item.honorGroups"
-          :key="d.id"
-        >
-          <img :src="d.imageUrl" alt="" />
-          <div class="mask" @click="submit(d)">
-            <FlyButton>
-              <div>{{ $t("领取") }}</div>
-            </FlyButton>
+  <div class="header">
+    <img src="../../../assets/poap/bg.png" alt="" />
+    <div class="title">POAP</div>
+    <div class="nav">
+      <div class="nav-l">
+        <h1>Hey {{ props.account }}!</h1>
+        <div class="nav-list">
+          <div
+            class="nav-item"
+            :class="{ active: isClaimed == 1 }"
+            @click="checkItem(1)"
+          >
+            Claimed <span></span>
+          </div>
+          <div
+            class="nav-item"
+            :class="{ active: isClaimed == 2 }"
+            @click="checkItem(2)"
+          >
+            Unclaimed <span></span>
           </div>
         </div>
       </div>
+      <div class="logo">
+        <img src="../../../assets/poap/logo.png" alt="" />
+      </div>
+    </div>
+  </div>
+  <div v-if="state.firstLoading">
+    <template v-if="state.list.length > 0">
+      <template v-if="isClaimed == 1">
+        <div class="container" v-for="item in state.list" :key="item.year">
+          <h3>{{ item.year }}</h3>
+          <div class="itemBox">
+            <div
+              class="item"
+              :class="{ get: d.isHas }"
+              v-for="d in item.honorGroups"
+              :key="d.id"
+            >
+              <img :src="d.imageUrl" alt="" />
+            </div>
+          </div>
+        </div>
+      </template>
+      <template v-else-if="isClaimed == 2">
+        <div class="container" v-for="item in state.list" :key="item.year">
+          <h3>{{ item.year }}</h3>
+          <div class="un-itemBox">
+            <div class="un-item" v-for="d in item.honorGroups" :key="d.id">
+              <div class="image-box">
+                <img :src="d.imageUrl" alt="" />
+              </div>
+              <div class="mask" @click="submit(d)">
+                <button>
+                  {{ $t("领取") }}
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </template>
+    </template>
+    <div class="none-box" v-else>
+      <img src="../../../assets/poap/none.png" class="none" alt="" />
+      <p>You don't have any POAP yet</p>
     </div>
   </div>
 
@@ -33,18 +80,23 @@
 <script setup>
 import commonApi from "@api/common";
 import FlyWalletDialog from "@FlyUI/FlyWalletDialog.vue";
-import { reactive } from "vue";
+import { reactive, ref } from "vue";
 import {
-  getAllClaimedList,
   getClaimedList,
   gethonorReceive,
+  getunClaimedList,
 } from "../../../api/achievement";
 import FlyLoadingFish from "@FlyUI/FlyLoadingFish.vue";
 import { useStore } from "vuex";
-import FlyButton from "../../../FlyUI/FlyButton.vue";
 import { WALLET_DIALOG_PARAMS } from "../../../constants/dialog";
 import { getContractWidthSingerAddress } from "../../../walletUtils/stcContract";
 const store = useStore();
+const props = defineProps({
+  account: {
+    type: String,
+    default: "",
+  },
+});
 const state = reactive({
   list: [],
   firstLoading: false,
@@ -60,73 +112,39 @@ const dialogSetting = reactive({
   failedText: `领取失败`,
   isShowClose: false,
 });
-const mergeArr = (arr1, arr2) => {
-  const json1 = arr2Json(arr1, "year");
-  const json2 = arr2Json(arr2, "year");
-  const arr = [];
-  for (const key in json1) {
-    if (json2[key]) {
-      json1[key] = {
-        ...json1[key],
-        honorGroups: mergeArrGroups(
-          json1[key].honorGroups,
-          json2[key].honorGroups
-        ),
-      };
-      delete json2[key];
-    }
-    arr.push(json1[key]);
-  }
-  for (const key in json2) {
-    arr.push(json2[key]);
-  }
-  return arr;
-};
-const mergeArrGroups = (arr1, arr2) => {
-  const json1 = arr2Json(arr1, "id");
-  const json2 = arr2Json(arr2, "id");
-  const arr = [];
-  for (const key in json1) {
-    if (json2[key]) {
-      json1[key] = { ...json1[key], isHas: true };
-      delete json2[key];
-    }
-    arr.push(json1[key]);
-  }
-  for (const key in json2) {
-    arr.push(json2[key]);
-  }
-  return arr;
-};
 
-const arr2Json = (arr, key) => {
-  let newJson = {};
-  for (const item of arr) {
-    newJson[item[key]] = item;
+const isClaimed = ref(1);
+const checkItem = (id) => {
+  isClaimed.value = id;
+  state.firstLoading = false;
+  if (id == 1) {
+    getClaimedList(props.account).then((res) => {
+      state.firstLoading = true;
+      state.list = res.data;
+    });
+  } else {
+    getunClaimedList(props.account).then((res) => {
+      state.firstLoading = true;
+      state.list = res.data;
+    });
   }
-  return newJson;
 };
 
 const submit = (d) => {
   dialogSetting.dialogVisible = true;
   dialogSetting.dialogStatus = "ongoing";
   gethonorReceive({
-    account: store.state.StoreWallet.accounts[0],
+    account: props.account,
     groupId: d.id,
   }).then((res) => {
     console.log(res);
     dialogSetting.dialogText = "还未导入陈列室，正在导入";
     if (res.code == 406) {
-      importGallery(
-        [d.nftMeta, d.nftBody],
-        "gellery",
-        store.state.StoreWallet.accounts[0],
-        d.nftType
-      )
+      importGallery([d.nftMeta, d.nftBody], "gellery", props.account, d.nftType)
         .then(() => {
           dialogSetting.dialogText = "导入成功,正在领取";
           gethonorReceive({
-            account: store.state.StoreWallet.accounts[0],
+            account: props.account,
             groupId: d.id,
           }).then((res) => {
             if (res.code == 200) {
@@ -190,30 +208,100 @@ const importGallery = async (tyArgs, type, account, typeSBT) => {
     }
   }
 };
-getAllClaimedList(store.state.StoreWallet.accounts[0]).then((res) => {
+getClaimedList(props.account).then((res) => {
   state.firstLoading = true;
-  console.log(res);
-  console.log(mergeArr(state.list, res.data), "111");
-  state.list = mergeArr(state.list, res.data);
-});
-getClaimedList(store.state.StoreWallet.accounts[0]).then((res) => {
-  console.log(res);
-  console.log(mergeArr(state.list, res.data), "222");
-
-  state.list = mergeArr(state.list, res.data);
+  state.list = res.data;
 });
 </script>
 <style lang="scss" scoped>
-h1 {
-  color: #fff;
-  font-size: 20px;
+.header {
+  width: 100%;
+  position: relative;
+  margin-top: -38px;
+  img {
+    width: 100%;
+  }
+  .title {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 30px;
+    font-size: 48px;
+    color: #fff;
+    // font-weight: bold;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -30px;
+    .logo {
+      width: 152px;
+      img {
+        width: 100%;
+      }
+    }
+    h1 {
+      margin-top: 35px;
+      color: #fff;
+      font-size: 18px;
+    }
+    .nav-list {
+      margin-top: 30px;
+      width: 910px;
+      height: 44px;
+      background: #242424;
+      border-radius: 9px;
+      display: flex;
+      color: #fff;
+      .nav-item {
+        position: relative;
+        line-height: 44px;
+        margin-left: 40px;
+        padding: 0 10px;
+        color: #8c8b8c;
+        cursor: pointer;
+        &.active {
+          color: #fff;
+          span {
+            display: block;
+          }
+        }
+        span {
+          width: 100%;
+          height: 2px;
+          background: #fff;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.none-box {
+  p {
+    text-align: center;
+    color: #8c8b8c;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  .none {
+    width: 240px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 100px;
+  }
 }
 .container {
   color: #fff;
   margin-bottom: 40px;
+  margin-top: 40px;
   h3 {
-    font-size: 28px;
+    font-size: 36px;
     margin-bottom: 30px;
+    color: #fba800;
   }
   .itemBox {
     display: flex;
@@ -235,30 +323,62 @@ h1 {
         display: flex;
         justify-content: center;
         align-items: center;
+        display: none;
         button {
           display: none;
         }
       }
 
-      &.get {
-        .mask {
-          display: none !important;
-        }
-      }
+      // &.get {
+      //   .mask {
+      //     display: none !important;
+      //   }
+      // }
       &:hover {
         transform: translateY(-3px);
-        .mask {
-          display: flex;
-          button {
-            display: block;
-          }
-        }
+        // .mask {
+        //   display: flex;
+        //   button {
+        //     display: block;
+        //   }
+        // }
       }
       img {
-        width: 250px;
-        height: 150px;
-        border-radius: 10px;
+        width: 230px;
+        height: 230px;
+        object-fit: contain;
       }
+    }
+  }
+  .un-item {
+    width: 280px;
+    height: 228px;
+    overflow: hidden;
+    background: #242424;
+    border-radius: 18px;
+    text-align: center;
+    .image-box {
+      width: 100%;
+      height: 170px;
+      background: #000;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+    button {
+      width: 138px;
+      height: 28px;
+      font-size: 12px;
+      color: #9f3200;
+      background: linear-gradient(256deg, #fdd300 0%, #fba800 100%);
+      border: none;
+      box-shadow: 0px 12px 15px 0px rgba(253, 168, 0, 0.39);
+      border-radius: 8px;
+      margin-top: 18px;
+      cursor: pointer;
     }
   }
 }

@@ -79,12 +79,21 @@ const routes = [
         },
       },
       {
-        path: "/Achievement",
+        path: "/POAP",
         component: () => import("@views/Achievement/index.vue"),
-        name: "Achievement",
+        name: "POAPIndex",
         meta: {
           title: "成就",
-          url: "/Achievement",
+          url: "/POAP",
+        },
+      },
+      {
+        path: "/POAP/:id",
+        component: () => import("@views/Achievement/index.vue"),
+        name: "POAP",
+        meta: {
+          title: "成就",
+          url: "/POAP/:id",
         },
       },
       {

@@ -38,6 +38,6 @@ export default [
   },
   {
     label: "成就",
-    path: "/Achievement",
+    path: "/POAP",
   },
 ];

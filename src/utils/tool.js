@@ -275,6 +275,53 @@ const requestMoreFun = (cb) => {
   };
 };
 
+const mergeArr = (arr1, arr2) => {
+  const json1 = arr2Json(arr1, "year");
+  const json2 = arr2Json(arr2, "year");
+  const arr = [];
+  for (const key in json1) {
+    if (json2[key]) {
+      json1[key] = {
+        ...json1[key],
+        honorGroups: mergeArrGroups(
+          json1[key].honorGroups,
+          json2[key].honorGroups
+        ),
+      };
+      delete json2[key];
+    }
+    arr.push(json1[key]);
+  }
+  for (const key in json2) {
+    arr.push(json2[key]);
+  }
+  return arr;
+};
+const mergeArrGroups = (arr1, arr2) => {
+  const json1 = arr2Json(arr1, "id");
+  const json2 = arr2Json(arr2, "id");
+  const arr = [];
+  for (const key in json1) {
+    if (json2[key]) {
+      json1[key] = { ...json1[key], isHas: true };
+      delete json2[key];
+    }
+    arr.push(json1[key]);
+  }
+  for (const key in json2) {
+    arr.push(json2[key]);
+  }
+  return arr;
+};
+
+const arr2Json = (arr, key) => {
+  let newJson = {};
+  for (const item of arr) {
+    newJson[item[key]] = item;
+  }
+  return newJson;
+};
+
 export default {
   openNewWindow,
   hexCharCodeToStr,
@@ -290,4 +337,5 @@ export default {
   getCountDownDetails,
   imageisExist,
   requestMoreFun,
+  mergeArr,
 };

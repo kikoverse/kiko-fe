@@ -6,9 +6,16 @@ export function getAllClaimedList(params) {
     method: "GET",
   });
 }
+
 export function getClaimedList(params) {
   return request({
     url: `/v1/nft/honor/claimed/${params}`,
+    method: "GET",
+  });
+}
+export function getunClaimedList(params) {
+  return request({
+    url: `/v1/nft/honor/unClaimed/${params}`,
     method: "GET",
   });
 }
