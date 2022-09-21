@@ -39,7 +39,7 @@
               v-for="d in item.honorGroups"
               :key="d.id"
             >
-              <img :src="d.imageUrl" alt="" />
+              <img :src="d.nft_image" alt="" />
             </div>
           </div>
         </div>
@@ -368,6 +368,9 @@ getClaimedList(props.account).then((res) => {
         object-fit: contain;
       }
     }
+    &:hover {
+      transform: translateY(-3px);
+    }
     button {
       width: 138px;
       height: 28px;
@@ -379,6 +382,7 @@ getClaimedList(props.account).then((res) => {
       border-radius: 8px;
       margin-top: 18px;
       cursor: pointer;
+      font-weight: bold;
     }
   }
 }
