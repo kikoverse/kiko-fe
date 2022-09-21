@@ -311,7 +311,7 @@ getClaimedList(props.account).then((res) => {
       position: relative;
       margin-right: 30px;
       cursor: pointer;
-      box-shadow: 0 18px 32px -18px rgba(0, 0, 0, 0.6);
+      // box-shadow: 0 18px 32px -18px rgba(0, 0, 0, 0.6);
       transition: 0.5s all ease;
       .mask {
         position: absolute;
