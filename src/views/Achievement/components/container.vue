@@ -297,7 +297,7 @@ getClaimedList(props.account).then((res) => {
 .container {
   color: #fff;
   margin-bottom: 40px;
-  margin-top: 40px;
+  margin-top: 15px;
   h3 {
     font-size: 36px;
     margin-bottom: 30px;

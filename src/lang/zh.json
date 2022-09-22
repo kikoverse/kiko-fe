@@ -353,7 +353,7 @@
     "Hey":"您好",
     "Claimed":"已領取",
     "Unclaimed":"待領取",
-    "You don't have any POAP yet":"您還沒有勳章，快去領取把"
+    "You don't have any POAP yet":"您還沒有勳章，快去領取吧"
   },
   "farms": {
     "farm-swap-total-1": "總交易額",
