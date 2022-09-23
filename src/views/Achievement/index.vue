@@ -18,16 +18,19 @@ const router = useRouter();
 const account = ref("");
 
 watchEffect(() => {
-  if (route.params.id) {
-    account.value = route.params.id;
-  } else if (store.state.StoreWallet.walletStatus === "connected") {
-    account.value = store.state.StoreWallet.accounts[0];
-    router.push({
-      name: "POAP",
-      params: {
-        id: store.state.StoreWallet.accounts[0],
-      },
-    });
+  console.log(route.path);
+  if (route.path.indexOf("/POAP") !== -1) {
+    if (route.params.id) {
+      account.value = route.params.id;
+    } else if (store.state.StoreWallet.walletStatus === "connected") {
+      account.value = store.state.StoreWallet.accounts[0];
+      router.push({
+        name: "POAP",
+        params: {
+          id: store.state.StoreWallet.accounts[0],
+        },
+      });
+    }
   }
 });
 </script>
