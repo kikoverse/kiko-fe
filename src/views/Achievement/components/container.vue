@@ -58,8 +58,8 @@
       </div>
     </template>
     <template v-else-if="isClaimed == 2">
-      <template v-if="state.list.length > 0">
-        <div class="container" v-for="item in state.list" :key="item.year">
+      <template v-if="state.unlist.length > 0">
+        <div class="container" v-for="item in state.unlist" :key="item.year">
           <h3>{{ item.year }}</h3>
           <div class="un-itemBox">
             <div class="un-item" v-for="d in item.honorGroups" :key="d.id">
