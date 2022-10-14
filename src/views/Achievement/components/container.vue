@@ -400,7 +400,7 @@ getClaimedList(props.account).then((res) => {
       color: #9f3200;
       background: linear-gradient(256deg, #fdd300 0%, #fba800 100%);
       border: none;
-      box-shadow: 0px 12px 15px 0px rgba(253, 168, 0, 0.39);
+      box-shadow: 0px 4px 15px 0px rgba(253, 168, 0, 0.39);
       border-radius: 8px;
       margin-top: 18px;
       cursor: pointer;
