@@ -28,8 +28,8 @@
     </div>
   </div>
   <div v-if="state.firstLoading">
-    <template v-if="state.list.length > 0">
-      <template v-if="isClaimed == 1">
+    <template v-if="isClaimed == 1">
+      <template v-if="state.list.length > 0">
         <div class="container" v-for="item in state.list" :key="item.year">
           <h3>{{ item.year }}</h3>
           <div class="itemBox">
@@ -52,8 +52,14 @@
           </div>
         </div>
       </template>
-      <template v-else-if="isClaimed == 2">
-        <div class="container" v-for="item in state.list" :key="item.year">
+      <div class="none-box" v-else>
+        <img src="../../../assets/poap/none.png" class="none" alt="" />
+        <p>{{ $t("You don't have any POAP yet") }}</p>
+      </div>
+    </template>
+    <template v-else-if="isClaimed == 2">
+      <template v-if="state.unlist.length > 0">
+        <div class="container" v-for="item in state.unlist" :key="item.year">
           <h3>{{ item.year }}</h3>
           <div class="un-itemBox">
             <div class="un-item" v-for="d in item.honorGroups" :key="d.id">
@@ -69,11 +75,11 @@
           </div>
         </div>
       </template>
+      <div class="none-box" v-else>
+        <img src="../../../assets/poap/none.png" class="none" alt="" />
+        <p>{{ $t("You don't have any POAP yet") }}</p>
+      </div>
     </template>
-    <div class="none-box" v-else>
-      <img src="../../../assets/poap/none.png" class="none" alt="" />
-      <p>{{ $t("You don't have any POAP yet") }}</p>
-    </div>
   </div>
 
   <fly-loading-fish v-else></fly-loading-fish>
@@ -107,6 +113,7 @@ const props = defineProps({
 });
 const state = reactive({
   list: [],
+  unlist: [],
   firstLoading: false,
 });
 const handleSucceed = () => {
@@ -133,7 +140,7 @@ const checkItem = (id) => {
   } else {
     getunClaimedList(props.account).then((res) => {
       state.firstLoading = true;
-      state.list = res.data;
+      state.unlist = res.data;
     });
   }
 };
