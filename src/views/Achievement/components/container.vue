@@ -58,8 +58,8 @@
       </div>
     </template>
     <template v-else-if="isClaimed == 2">
-      <template v-if="state.unlist.length > 0">
-        <div class="container" v-for="item in state.unlist" :key="item.year">
+      <template v-if="state.list.length > 0">
+        <div class="container" v-for="item in state.list" :key="item.year">
           <h3>{{ item.year }}</h3>
           <div class="un-itemBox">
             <div class="un-item" v-for="d in item.honorGroups" :key="d.id">
@@ -260,6 +260,7 @@ getClaimedList(props.account).then((res) => {
       color: #fff;
       font-size: 18px;
     }
+
     .nav-list {
       margin-top: 30px;
       width: 910px;
@@ -313,6 +314,10 @@ getClaimedList(props.account).then((res) => {
   color: #fff;
   margin-bottom: 40px;
   margin-top: 15px;
+  .un-itemBox {
+    display: flex;
+    flex-wrap: wrap;
+  }
   h3 {
     font-size: 36px;
     margin-bottom: 30px;
@@ -370,6 +375,8 @@ getClaimedList(props.account).then((res) => {
     height: 228px;
     overflow: hidden;
     background: #242424;
+    margin-bottom: 24px;
+    margin-right: 20px;
     border-radius: 18px;
     text-align: center;
     .image-box {
