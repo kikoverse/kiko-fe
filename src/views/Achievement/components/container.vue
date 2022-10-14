@@ -41,6 +41,14 @@
             >
               <img :src="d.nft_image" alt="" />
             </div>
+            <div
+              class="item"
+              :class="{ get: d.isHas }"
+              v-for="d in item.honorGroups"
+              :key="d.id"
+            >
+              <img :src="d.nft_image" alt="" />
+            </div>
           </div>
         </div>
       </template>
@@ -249,7 +257,7 @@ getClaimedList(props.account).then((res) => {
       margin-top: 30px;
       width: 910px;
       height: 44px;
-      background: #242424;
+      background: rgba(255, 255, 255, 0.15);
       border-radius: 9px;
       display: flex;
       color: #fff;
@@ -309,7 +317,7 @@ getClaimedList(props.account).then((res) => {
     .item {
       margin-bottom: 20px;
       position: relative;
-      margin-right: 30px;
+      margin-right: 10px;
       cursor: pointer;
       // box-shadow: 0 18px 32px -18px rgba(0, 0, 0, 0.6);
       transition: 0.5s all ease;
