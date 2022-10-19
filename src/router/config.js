@@ -188,6 +188,15 @@ const routes = [
         },
       },
       {
+        path: "/test",
+        component: () => import("@views/test/index.vue"),
+        name: "test",
+        meta: {
+          title: "test",
+          url: "/test",
+        },
+      },
+      {
         path: "/info",
         component: () => import("@views/Info/Index.vue"),
         name: "info",
