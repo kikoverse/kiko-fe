@@ -41,14 +41,6 @@
             >
               <img :src="d.nft_image" alt="" />
             </div>
-            <div
-              class="item"
-              :class="{ get: d.isHas }"
-              v-for="d in item.honorGroups"
-              :key="d.id"
-            >
-              <img :src="d.nft_image" alt="" />
-            </div>
           </div>
         </div>
       </template>
