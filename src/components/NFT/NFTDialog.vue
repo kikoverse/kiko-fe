@@ -37,7 +37,7 @@
             "
             :src="
               props.dialogParams.customImgUrl ||
-              '//static.kikoswap.com/img/loading.webp'
+              '//kikoswap.com/static/img/loading.webp'
             "
             :style="
               setWH(
@@ -146,7 +146,7 @@ import FlySpace from "@FlyUI/FlySpace.vue";
 import FlyButton from "@FlyUI/FlyButton.vue";
 import { useStore } from "vuex";
 // import { ElDialog } from "element-plus";
-// import dialogOnGoingImg from "//static.kikoswap.com/img/loading.webp";
+// import dialogOnGoingImg from "//kikoswap.com/static/img/loading.webp";
 // import dialogFailedImg from "../../assets/nft/dialog-error.png";
 // import dialogSuccessImg from "../../assets/nft/dialog-ok.png";
 import dialogLoadingImg from "../../assets/nft/dialog-loading.png";

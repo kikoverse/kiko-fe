@@ -36,7 +36,7 @@
         <div class="fly-wallet-dialog-content-core">
           <img
             style="border-radius: 16px"
-            src="https://static.kikoswap.com/img/loading.webp"
+            src="https://kikoswap.com/static/img/loading.webp"
             v-if="
               props.dialogParams.isUseStatusImg &&
               props.dialogParams.dialogStatus == 'ongoing'
@@ -131,7 +131,7 @@ import { defineProps, defineEmits, reactive, computed, watchEffect } from "vue";
 import SvgIcon from "@components/SvgIcon/Index.vue";
 import FlyButton from "@FlyUI/FlyButton.vue";
 import { useStore } from "vuex";
-// import dialogOnGoingImg from "//static.kikoswap.com/img/loading.webp";
+// import dialogOnGoingImg from "//kikoswap.com/static/img/loading.webp";
 // import dialogFailedImg from "../assets/nft/dialog-error.png";
 // import dialogSuccessImg from "../assets/nft/dialog-ok.png";
 import dialogLoadingImg from "../assets/nft/dialog-loading.png";

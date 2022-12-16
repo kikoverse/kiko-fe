@@ -13,7 +13,7 @@
             v-if="props.cType === 'secondConfirm' || props.cType === 'fallback'"
           />
           <img
-            src="//static.kikoswap.com/img/loading.webp"
+            src="//kikoswap.com/static/img/loading.webp"
             v-if="props.cType === 'loading'"
             class="loading-img"
           />

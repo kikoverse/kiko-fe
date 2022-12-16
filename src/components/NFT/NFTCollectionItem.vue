@@ -49,7 +49,7 @@ let state = reactive({
   isShowConfirm: computed(
     () => store.state.StoreNftMarket.change_confirm_visible
   ),
-  // pic: require("//static.kikoswap.com/img/loading.webp"),
+  // pic: require("//kikoswap.com/static/img/loading.webp"),
   icon: require("../../assets/nft/blindbox.png"),
   contentText: "",
   countdown: null,
